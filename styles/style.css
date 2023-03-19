@@ -47,6 +47,10 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__title {
   max-width: 544px;
   font-size: 66px;
@@ -86,6 +90,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -161,6 +169,10 @@
   margin-top: 60px;
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -371,6 +383,7 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
+  z-index: -1;
 }
 
 .about__title {
@@ -388,22 +401,23 @@
   font-weight: 400;
   max-width: 660px;
   margin-left: 120px;
+  position: relative;
+  z-index: 1;
 }
 
 .about__paragraph {
-  z-index: -2;
   margin: 0;
   margin-bottom: 32px;
 }
 
 .about__circle {
-  z-index: 0;
   background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
   position: absolute;
-  bottom: 221px;
+  top: -121px;
   left: -91px;
 }
 

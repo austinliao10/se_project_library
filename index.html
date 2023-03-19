@@ -21,19 +21,19 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Staff picks</a>
+              <a class="nav__link" href="#staff_picks">Staff picks</a>
             </li>
             <li>
-              <a class="nav__link">Events</a>
+              <a class="nav__link" href="#events">Events</a>
             </li>
             <li>
-              <a class="nav__link">Become a member</a>
+              <a class="nav__link" href="#library_member">Become a member</a>
             </li>
             <li>
-              <a class="nav__link">About</a>
+              <a class="nav__link" href="#about_library">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,7 +57,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
@@ -135,7 +135,7 @@
           <!-- Start creating the composition here -->
         </section>
 
-        <section class="staff">
+        <section class="staff" id="staff_picks">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
 
@@ -210,7 +210,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section class="membership" id="library_member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
@@ -266,7 +266,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="about_library">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
@@ -290,7 +290,7 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer__columns">
           <div class="footer__column">
             <img
